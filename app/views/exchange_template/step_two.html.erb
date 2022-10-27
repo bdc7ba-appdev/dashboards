@@ -7,11 +7,12 @@
 <%#=@array_of_rates%>
 
 
+
 <ul>
-  <%@array_of_rates.each do |a_rate|%>
+  <% @array_of_symbols.each do |a_symbol|%>
     <li>
-      <a href="/forex/<%=params.fetch("first_currency")%>/<%=a_rate%>">
-        Convert 1 <%=params.fetch("first_currency")%> to <%=a_rate%>...
+      <a href="/forex/<%=params.fetch("first_currency")%>/<%=a_symbol%>">
+        Convert 1 <%=params.fetch("first_currency")%> to <%=a_symbol%>...
       </a>
     </li>
     <%end%>
