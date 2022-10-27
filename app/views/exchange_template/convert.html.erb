@@ -1,0 +1,7 @@
+<h1>Convert <%=params.fetch("first_currency")%> to <%=params.fetch("second_currency")%></h1>
+
+<p>Go <a href="/forex/<%=params.fetch("first_currency")%>">back</a>.</p>
+
+<%=@rate%>
+
+<p>1 <%=params.fetch("first_currency")%> equals <%=@rate%> <%=params.fetch("second_currency")%></p>

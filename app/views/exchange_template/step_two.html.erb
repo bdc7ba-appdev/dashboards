@@ -1,0 +1,18 @@
+<h1>Convert <%=params.fetch("first_currency")%></h1>
+
+<p>Go <a href="/forex">back</a>.</p>
+
+<%#=@parsed_data_two%>
+<%#=@rates_hash%>
+<%#=@array_of_rates%>
+
+
+<ul>
+  <%@array_of_rates.each do |a_rate|%>
+    <li>
+      <a href="/forex/<%=params.fetch("first_currency")%>/<%=a_rate%>">
+        Convert 1 <%=params.fetch("first_currency")%> to <%=a_rate%>...
+      </a>
+    </li>
+    <%end%>
+</ul>
